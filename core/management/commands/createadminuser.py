@@ -21,8 +21,8 @@ class Command(BaseCommand):
         # create user
         user = User(username='admin')
         user.first_name = "super user"
-        user.last_name = "admin"
-        user.set_password('password')
+        user.last_name = "root"
+        user.set_password('root')
         user.is_superuser = True
         user.is_staff = True
         user.save()
